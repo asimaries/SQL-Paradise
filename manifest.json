@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "sqlParadise",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://sql-island.informatik.uni-kl.de/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sql-island.informatik.uni-kl.de/"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
